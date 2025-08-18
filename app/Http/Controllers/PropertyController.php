@@ -14,12 +14,18 @@ class PropertyController extends Controller
      */
     public function index()
     {
-        $q = request('q');
+        $q = trim(request('q',''));
         $props = Property::query()
-            ->when($q, fn($x)=>$x->where(fn($w)=>$w
-                ->where('name','like',"%$q%")
-                ->orWhere('address','like',"%$q%")))
-            ->latest()->paginate(10)->withQueryString();
+            ->when($q !== '', function($x) use ($q) {
+                $like = '%'.str_replace(['%','_'], ['\\%','\\_'], $q).'%';
+                $x->where(function($w) use ($like) {
+                    $w->where('name','like',$like)
+                        ->orWhere('address','like',$like);
+                });
+            })
+            ->latest()
+            ->paginate(10)
+            ->withQueryString();
 
         return view('properties.index', compact('props','q'));
     }

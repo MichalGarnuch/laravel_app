@@ -11,4 +11,9 @@ class Property extends Model
 
     /** @use HasFactory<\Database\Factories\PropertyFactory> */
     use HasFactory;
+
+    protected $casts = [
+        'area' => 'integer',
+        'price' => 'decimal:2'
+        ];
 }

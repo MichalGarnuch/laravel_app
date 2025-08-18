@@ -11,9 +11,11 @@
         <div class="flex items-center gap-2 mb-4">
             <form method="get" class="flex gap-2">
                 <input name="q" value="{{ $q }}" class="border p-2" placeholder="Szukaj nazwą/adresem">
-                <button class="px-3 py-2 border">Szukaj</button>
+                <button type="submit" class="ml-auto bg-green-600 text-white px-3 py-2 rounded">
+                    Szukaj
+                </button>
             </form>
-            <a href="{{ route('properties.create') }}" class="ml-auto px-3 py-2 bg-blue-600 text-white rounded">+ Dodaj</a>
+            <a href="{{ route('properties.create') }}" class="ml-auto px-3 py-2 bg-red-600 text-white rounded">+ Dodaj</a>
         </div>
 
         <table class="w-full border">

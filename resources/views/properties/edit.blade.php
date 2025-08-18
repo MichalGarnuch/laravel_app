@@ -3,7 +3,7 @@
     <div class="p-6">
         <form method="post" action="{{ route('properties.update',$property) }}">
             @method('put')
-            @include('properties._form', ['property'=>$property])
+            @include('properties._form', ['property'=>$property, 'cancelUrl' => route('properties.show',$property)])
         </form>
     </div>
 </x-app-layout>
