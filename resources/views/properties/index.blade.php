@@ -1,5 +1,9 @@
 <x-app-layout>
-    <x-slot name="header"><h2 class="font-semibold text-xl">Nieruchomości</h2></x-slot>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Nieruchomości') }}
+        </h2>
+    </x-slot>
 
     <div class="p-6">
         @if(session('ok')) <div class="mb-3 text-green-700">{{ session('ok') }}</div> @endif
