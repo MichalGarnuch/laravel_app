@@ -1,0 +1,152 @@
+# laravel_app — mapa plików (1/1)
+
+Wykaz śledzonych plików z badanego commita. Liczba wierszy i nazwy deklaracji są wyciągane automatycznie z dostępnej kopii tekstowej; nie oznaczają ręcznej oceny pliku. Brak opisu oznacza, że zawartość nie była analizowana tą metodą (np. plik binarny, zasób lub pominięty plik).
+
+[Wróć do audytu](AUDYT_EDUKACYJNY.md) · [1](AUDYT_MAPA_01.md)
+
+- [.editorconfig](.editorconfig)
+- [.env.example](.env.example)
+- [.gitattributes](.gitattributes)
+- [.gitignore](.gitignore)
+- [README.md](README.md) — 61 wierszy
+- [app/Filament/Resources/Properties/Pages/CreateProperty.php](app/Filament/Resources/Properties/Pages/CreateProperty.php) — 11 wierszy; deklaracje: `CreateProperty:8`
+- [app/Filament/Resources/Properties/Pages/EditProperty.php](app/Filament/Resources/Properties/Pages/EditProperty.php) — 21 wierszy; deklaracje: `EditProperty:10`, `getHeaderActions:14`
+- [app/Filament/Resources/Properties/Pages/ListProperties.php](app/Filament/Resources/Properties/Pages/ListProperties.php) — 19 wierszy; deklaracje: `ListProperties:9`, `getHeaderActions:13`
+- [app/Filament/Resources/Properties/Pages/ViewProperty.php](app/Filament/Resources/Properties/Pages/ViewProperty.php) — 19 wierszy; deklaracje: `ViewProperty:9`, `getHeaderActions:13`
+- [app/Filament/Resources/Properties/PropertyResource.php](app/Filament/Resources/Properties/PropertyResource.php) — 58 wierszy; deklaracje: `PropertyResource:19`, `form:27`, `infolist:32`, `table:37`, `getRelations:42`
+- [app/Filament/Resources/Properties/Schemas/PropertyForm.php](app/Filament/Resources/Properties/Schemas/PropertyForm.php) — 31 wierszy; deklaracje: `PropertyForm:9`, `configure:11`
+- [app/Filament/Resources/Properties/Schemas/PropertyInfolist.php](app/Filament/Resources/Properties/Schemas/PropertyInfolist.php) — 26 wierszy; deklaracje: `PropertyInfolist:8`, `configure:10`
+- [app/Filament/Resources/Properties/Tables/PropertiesTable.php](app/Filament/Resources/Properties/Tables/PropertiesTable.php) — 50 wierszy; deklaracje: `PropertiesTable:12`, `configure:14`
+- [app/Http/Controllers/Auth/AuthenticatedSessionController.php](app/Http/Controllers/Auth/AuthenticatedSessionController.php) — 47 wierszy; deklaracje: `AuthenticatedSessionController:12`, `create:17`, `store:25`, `destroy:37`
+- [app/Http/Controllers/Auth/ConfirmablePasswordController.php](app/Http/Controllers/Auth/ConfirmablePasswordController.php) — 40 wierszy; deklaracje: `ConfirmablePasswordController:12`, `show:17`, `store:25`
+- [app/Http/Controllers/Auth/EmailVerificationNotificationController.php](app/Http/Controllers/Auth/EmailVerificationNotificationController.php) — 24 wierszy; deklaracje: `EmailVerificationNotificationController:9`, `store:14`
+- [app/Http/Controllers/Auth/EmailVerificationPromptController.php](app/Http/Controllers/Auth/EmailVerificationPromptController.php) — 21 wierszy; deklaracje: `EmailVerificationPromptController:10`, `__invoke:15`
+- [app/Http/Controllers/Auth/NewPasswordController.php](app/Http/Controllers/Auth/NewPasswordController.php) — 62 wierszy; deklaracje: `NewPasswordController:16`, `create:21`, `store:31`
+- [app/Http/Controllers/Auth/PasswordController.php](app/Http/Controllers/Auth/PasswordController.php) — 29 wierszy; deklaracje: `PasswordController:11`, `update:16`
+- [app/Http/Controllers/Auth/PasswordResetLinkController.php](app/Http/Controllers/Auth/PasswordResetLinkController.php) — 44 wierszy; deklaracje: `PasswordResetLinkController:11`, `create:16`, `store:26`
+- [app/Http/Controllers/Auth/RegisteredUserController.php](app/Http/Controllers/Auth/RegisteredUserController.php) — 50 wierszy; deklaracje: `RegisteredUserController:15`, `create:20`, `store:30`
+- [app/Http/Controllers/Auth/VerifyEmailController.php](app/Http/Controllers/Auth/VerifyEmailController.php) — 27 wierszy; deklaracje: `VerifyEmailController:10`, `__invoke:15`
+- [app/Http/Controllers/Controller.php](app/Http/Controllers/Controller.php) — 8 wierszy; deklaracje: `Controller:5`
+- [app/Http/Controllers/ProfileController.php](app/Http/Controllers/ProfileController.php) — 60 wierszy; deklaracje: `ProfileController:12`, `edit:17`, `update:27`, `destroy:43`
+- [app/Http/Controllers/PropertyController.php](app/Http/Controllers/PropertyController.php) — 83 wierszy; deklaracje: `PropertyController:10`, `index:15`, `create:36`, `store:44`, `show:53`
+- [app/Http/Requests/Auth/LoginRequest.php](app/Http/Requests/Auth/LoginRequest.php) — 85 wierszy; deklaracje: `LoginRequest:12`, `authorize:17`, `rules:27`, `authenticate:40`, `ensureIsNotRateLimited:60`
+- [app/Http/Requests/ProfileUpdateRequest.php](app/Http/Requests/ProfileUpdateRequest.php) — 30 wierszy; deklaracje: `ProfileUpdateRequest:9`, `rules:16`
+- [app/Http/Requests/StorePropertyRequest.php](app/Http/Requests/StorePropertyRequest.php) — 32 wierszy; deklaracje: `StorePropertyRequest:7`, `authorize:12`, `rules:22`
+- [app/Http/Requests/UpdatePropertyRequest.php](app/Http/Requests/UpdatePropertyRequest.php) — 32 wierszy; deklaracje: `UpdatePropertyRequest:7`, `authorize:12`, `rules:22`
+- [app/Models/Property.php](app/Models/Property.php) — 19 wierszy; deklaracje: `Property:8`
+- [app/Models/User.php](app/Models/User.php) — 48 wierszy; deklaracje: `User:10`, `casts:41`
+- [app/Providers/AppServiceProvider.php](app/Providers/AppServiceProvider.php) — 24 wierszy; deklaracje: `AppServiceProvider:7`, `register:12`, `boot:20`
+- [app/Providers/TelescopeServiceProvider.php](app/Providers/TelescopeServiceProvider.php) — 64 wierszy; deklaracje: `TelescopeServiceProvider:10`, `register:15`, `hideSensitiveRequestDetails:36`, `gate:56`
+- [app/View/Components/AppLayout.php](app/View/Components/AppLayout.php) — 17 wierszy; deklaracje: `AppLayout:8`, `render:13`
+- [app/View/Components/GuestLayout.php](app/View/Components/GuestLayout.php) — 17 wierszy; deklaracje: `GuestLayout:8`, `render:13`
+- [artisan](artisan)
+- [bootstrap/app.php](bootstrap/app.php) — 18 wierszy
+- [bootstrap/cache/.gitignore](bootstrap/cache/.gitignore)
+- [bootstrap/providers.php](bootstrap/providers.php) — 7 wierszy
+- [composer.json](composer.json) — 84 wierszy
+- [composer.lock](composer.lock)
+- [config/activitylog.php](config/activitylog.php) — 52 wierszy
+- [config/app.php](config/app.php) — 126 wierszy
+- [config/auth.php](config/auth.php) — 115 wierszy
+- [config/cache.php](config/cache.php) — 108 wierszy
+- [config/database.php](config/database.php) — 174 wierszy
+- [config/filesystems.php](config/filesystems.php) — 80 wierszy
+- [config/logging.php](config/logging.php) — 132 wierszy
+- [config/mail.php](config/mail.php) — 118 wierszy
+- [config/media-library.php](config/media-library.php) — 285 wierszy
+- [config/permission.php](config/permission.php) — 202 wierszy
+- [config/queue.php](config/queue.php) — 112 wierszy
+- [config/sanctum.php](config/sanctum.php) — 84 wierszy
+- [config/services.php](config/services.php) — 38 wierszy
+- [config/session.php](config/session.php) — 217 wierszy
+- [config/telescope.php](config/telescope.php) — 207 wierszy
+- [database/.gitignore](database/.gitignore)
+- [database/factories/PropertyFactory.php](database/factories/PropertyFactory.php) — 28 wierszy; deklaracje: `PropertyFactory:11`, `definition:18`
+- [database/factories/UserFactory.php](database/factories/UserFactory.php) — 44 wierszy; deklaracje: `UserFactory:12`, `definition:24`, `unverified:38`
+- [database/migrations/0001_01_01_000000_create_users_table.php](database/migrations/0001_01_01_000000_create_users_table.php) — 49 wierszy; deklaracje: `up:12`, `down:43`
+- [database/migrations/0001_01_01_000001_create_cache_table.php](database/migrations/0001_01_01_000001_create_cache_table.php) — 35 wierszy; deklaracje: `up:12`, `down:30`
+- [database/migrations/0001_01_01_000002_create_jobs_table.php](database/migrations/0001_01_01_000002_create_jobs_table.php) — 57 wierszy; deklaracje: `up:12`, `down:51`
+- [database/migrations/2025_08_16_211423_create_personal_access_tokens_table.php](database/migrations/2025_08_16_211423_create_personal_access_tokens_table.php) — 33 wierszy; deklaracje: `up:12`, `down:29`
+- [database/migrations/2025_08_16_211744_create_permission_tables.php](database/migrations/2025_08_16_211744_create_permission_tables.php) — 136 wierszy; deklaracje: `up:12`, `down:122`
+- [database/migrations/2025_08_16_211855_create_activity_log_table.php](database/migrations/2025_08_16_211855_create_activity_log_table.php) — 27 wierszy; deklaracje: `CreateActivityLogTable:7`, `up:9`, `down:23`
+- [database/migrations/2025_08_16_211856_add_event_column_to_activity_log_table.php](database/migrations/2025_08_16_211856_add_event_column_to_activity_log_table.php) — 22 wierszy; deklaracje: `AddEventColumnToActivityLogTable:7`, `up:9`, `down:16`
+- [database/migrations/2025_08_16_211857_add_batch_uuid_column_to_activity_log_table.php](database/migrations/2025_08_16_211857_add_batch_uuid_column_to_activity_log_table.php) — 22 wierszy; deklaracje: `AddBatchUuidColumnToActivityLogTable:7`, `up:9`, `down:16`
+- [database/migrations/2025_08_16_211951_create_media_table.php](database/migrations/2025_08_16_211951_create_media_table.php) — 32 wierszy; deklaracje: `up:9`
+- [database/migrations/2025_08_16_212111_create_telescope_entries_table.php](database/migrations/2025_08_16_212111_create_telescope_entries_table.php) — 70 wierszy; deklaracje: `getConnection:12`, `up:20`, `down:62`
+- [database/migrations/2025_08_16_215020_create_properties_table.php](database/migrations/2025_08_16_215020_create_properties_table.php) — 32 wierszy; deklaracje: `up:12`, `down:28`
+- [database/seeders/DatabaseSeeder.php](database/seeders/DatabaseSeeder.php) — 27 wierszy; deklaracje: `DatabaseSeeder:9`, `run:14`
+- [database/seeders/PropertySeeder.php](database/seeders/PropertySeeder.php) — 18 wierszy; deklaracje: `PropertySeeder:9`, `run:14`
+- [lang/en/auth.php](lang/en/auth.php) — 20 wierszy
+- [lang/en/pagination.php](lang/en/pagination.php) — 19 wierszy
+- [lang/en/passwords.php](lang/en/passwords.php) — 22 wierszy
+- [lang/en/validation.php](lang/en/validation.php) — 199 wierszy
+- [package-lock.json](package-lock.json) — 3707 wierszy
+- [package.json](package.json) — 21 wierszy
+- [phpunit.xml](phpunit.xml) — 34 wierszy
+- [postcss.config.js](postcss.config.js) — 6 wierszy
+- [public/.htaccess](public/.htaccess)
+- [public/favicon.ico](public/favicon.ico)
+- [public/index.php](public/index.php) — 20 wierszy
+- [public/robots.txt](public/robots.txt)
+- [resources/css/app.css](resources/css/app.css) — 3 wierszy
+- [resources/js/app.js](resources/js/app.js) — 7 wierszy
+- [resources/js/bootstrap.js](resources/js/bootstrap.js) — 4 wierszy
+- [resources/views/auth/confirm-password.blade.php](resources/views/auth/confirm-password.blade.php) — 27 wierszy
+- [resources/views/auth/forgot-password.blade.php](resources/views/auth/forgot-password.blade.php) — 25 wierszy
+- [resources/views/auth/login.blade.php](resources/views/auth/login.blade.php) — 47 wierszy
+- [resources/views/auth/register.blade.php](resources/views/auth/register.blade.php) — 52 wierszy
+- [resources/views/auth/reset-password.blade.php](resources/views/auth/reset-password.blade.php) — 39 wierszy
+- [resources/views/auth/verify-email.blade.php](resources/views/auth/verify-email.blade.php) — 31 wierszy
+- [resources/views/components/application-logo.blade.php](resources/views/components/application-logo.blade.php) — 3 wierszy
+- [resources/views/components/auth-session-status.blade.php](resources/views/components/auth-session-status.blade.php) — 7 wierszy
+- [resources/views/components/danger-button.blade.php](resources/views/components/danger-button.blade.php) — 3 wierszy
+- [resources/views/components/dropdown-link.blade.php](resources/views/components/dropdown-link.blade.php) — 1 wierszy
+- [resources/views/components/dropdown.blade.php](resources/views/components/dropdown.blade.php) — 35 wierszy
+- [resources/views/components/input-error.blade.php](resources/views/components/input-error.blade.php) — 9 wierszy
+- [resources/views/components/input-label.blade.php](resources/views/components/input-label.blade.php) — 5 wierszy
+- [resources/views/components/modal.blade.php](resources/views/components/modal.blade.php) — 78 wierszy
+- [resources/views/components/nav-link.blade.php](resources/views/components/nav-link.blade.php) — 11 wierszy
+- [resources/views/components/primary-button.blade.php](resources/views/components/primary-button.blade.php) — 3 wierszy
+- [resources/views/components/responsive-nav-link.blade.php](resources/views/components/responsive-nav-link.blade.php) — 11 wierszy
+- [resources/views/components/secondary-button.blade.php](resources/views/components/secondary-button.blade.php) — 3 wierszy
+- [resources/views/components/text-input.blade.php](resources/views/components/text-input.blade.php) — 3 wierszy
+- [resources/views/dashboard.blade.php](resources/views/dashboard.blade.php) — 17 wierszy
+- [resources/views/layouts/app.blade.php](resources/views/layouts/app.blade.php) — 36 wierszy
+- [resources/views/layouts/guest.blade.php](resources/views/layouts/guest.blade.php) — 30 wierszy
+- [resources/views/layouts/navigation.blade.php](resources/views/layouts/navigation.blade.php) — 106 wierszy
+- [resources/views/profile/edit.blade.php](resources/views/profile/edit.blade.php) — 29 wierszy
+- [resources/views/profile/partials/delete-user-form.blade.php](resources/views/profile/partials/delete-user-form.blade.php) — 55 wierszy
+- [resources/views/profile/partials/update-password-form.blade.php](resources/views/profile/partials/update-password-form.blade.php) — 48 wierszy
+- [resources/views/profile/partials/update-profile-information-form.blade.php](resources/views/profile/partials/update-profile-information-form.blade.php) — 64 wierszy
+- [resources/views/properties/_form.blade.php](resources/views/properties/_form.blade.php) — 23 wierszy
+- [resources/views/properties/create.blade.php](resources/views/properties/create.blade.php) — 8 wierszy
+- [resources/views/properties/edit.blade.php](resources/views/properties/edit.blade.php) — 9 wierszy
+- [resources/views/properties/index.blade.php](resources/views/properties/index.blade.php) — 49 wierszy
+- [resources/views/properties/show.blade.php](resources/views/properties/show.blade.php) — 20 wierszy
+- [resources/views/welcome.blade.php](resources/views/welcome.blade.php) — 277 wierszy
+- [routes/auth.php](routes/auth.php) — 59 wierszy
+- [routes/console.php](routes/console.php) — 8 wierszy
+- [routes/web.php](routes/web.php) — 25 wierszy
+- [storage/app/.gitignore](storage/app/.gitignore)
+- [storage/app/private/.gitignore](storage/app/private/.gitignore)
+- [storage/app/public/.gitignore](storage/app/public/.gitignore)
+- [storage/debugbar/.gitignore](storage/debugbar/.gitignore)
+- [storage/framework/.gitignore](storage/framework/.gitignore)
+- [storage/framework/cache/.gitignore](storage/framework/cache/.gitignore)
+- [storage/framework/cache/data/.gitignore](storage/framework/cache/data/.gitignore)
+- [storage/framework/sessions/.gitignore](storage/framework/sessions/.gitignore)
+- [storage/framework/testing/.gitignore](storage/framework/testing/.gitignore)
+- [storage/framework/views/.gitignore](storage/framework/views/.gitignore)
+- [storage/logs/.gitignore](storage/logs/.gitignore)
+- [tailwind.config.js](tailwind.config.js) — 21 wierszy
+- [tests/Feature/Auth/AuthenticationTest.php](tests/Feature/Auth/AuthenticationTest.php) — 54 wierszy; deklaracje: `AuthenticationTest:9`, `test_login_screen_can_be_rendered:13`, `test_users_can_authenticate_using_the_login_screen:20`, `test_users_can_not_authenticate_with_invalid_password:33`, `test_users_can_logout:45`
+- [tests/Feature/Auth/EmailVerificationTest.php](tests/Feature/Auth/EmailVerificationTest.php) — 58 wierszy; deklaracje: `EmailVerificationTest:12`, `test_email_verification_screen_can_be_rendered:16`, `test_email_can_be_verified:25`, `test_email_is_not_verified_with_invalid_hash:44`
+- [tests/Feature/Auth/PasswordConfirmationTest.php](tests/Feature/Auth/PasswordConfirmationTest.php) — 44 wierszy; deklaracje: `PasswordConfirmationTest:9`, `test_confirm_password_screen_can_be_rendered:13`, `test_password_can_be_confirmed:22`, `test_password_is_not_confirmed_with_invalid_password:34`
+- [tests/Feature/Auth/PasswordResetTest.php](tests/Feature/Auth/PasswordResetTest.php) — 73 wierszy; deklaracje: `PasswordResetTest:11`, `test_reset_password_link_screen_can_be_rendered:15`, `test_reset_password_link_can_be_requested:22`, `test_reset_password_screen_can_be_rendered:33`, `test_password_can_be_reset_with_valid_token:50`
+- [tests/Feature/Auth/PasswordUpdateTest.php](tests/Feature/Auth/PasswordUpdateTest.php) — 51 wierszy; deklaracje: `PasswordUpdateTest:10`, `test_password_can_be_updated:14`, `test_correct_password_must_be_provided_to_update_password:34`
+- [tests/Feature/Auth/RegistrationTest.php](tests/Feature/Auth/RegistrationTest.php) — 31 wierszy; deklaracje: `RegistrationTest:8`, `test_registration_screen_can_be_rendered:12`, `test_new_users_can_register:19`
+- [tests/Feature/ExampleTest.php](tests/Feature/ExampleTest.php) — 19 wierszy; deklaracje: `ExampleTest:8`, `test_the_application_returns_a_successful_response:13`
+- [tests/Feature/ProfileTest.php](tests/Feature/ProfileTest.php) — 99 wierszy; deklaracje: `ProfileTest:9`, `test_profile_page_is_displayed:13`, `test_profile_information_can_be_updated:24`, `test_email_verification_status_is_unchanged_when_the_email_address_is_unchanged:46`, `test_user_can_delete_their_account:64`
+- [tests/TestCase.php](tests/TestCase.php) — 10 wierszy; deklaracje: `TestCase:7`
+- [tests/Unit/ExampleTest.php](tests/Unit/ExampleTest.php) — 16 wierszy; deklaracje: `ExampleTest:7`, `test_that_true_is_true:12`
+- [vite.config.js](vite.config.js) — 11 wierszy
