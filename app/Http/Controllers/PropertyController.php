@@ -15,7 +15,7 @@ class PropertyController extends Controller
     public function index()
     {
         $q = trim(request('q',''));
-        $props = Property::query()
+        $props = Property::query()->where('user_id', auth()->id())
             ->when($q !== '', function($x) use ($q) {
                 $like = '%'.str_replace(['%','_'], ['\\%','\\_'], $q).'%';
                 $x->where(function($w) use ($like) {
@@ -43,7 +43,7 @@ class PropertyController extends Controller
      */
     public function store(StorePropertyRequest $req)
     {
-        Property::create($req->validated());
+        Property::create([...$req->validated(), 'user_id' => $req->user()->id]);
         return redirect()->route('properties.index')->with('ok','Dodano.');
     }
 
@@ -52,6 +52,7 @@ class PropertyController extends Controller
      */
     public function show(Property $property)
     {
+        \Illuminate\Support\Facades\Gate::authorize("view", $property);
         return view('properties.show', compact('property'));
     }
 
@@ -60,6 +61,7 @@ class PropertyController extends Controller
      */
     public function edit(Property $property)
     {
+        \Illuminate\Support\Facades\Gate::authorize("update", $property);
         return view('properties.edit', compact('property'));
     }
 
@@ -68,6 +70,7 @@ class PropertyController extends Controller
      */
     public function update(UpdatePropertyRequest $req, Property $property)
     {
+        \Illuminate\Support\Facades\Gate::authorize("update", $property);
         $property->update($req->validated());
         return redirect()->route('properties.index')->with('ok','Zaktualizowano.');
     }
@@ -77,6 +80,7 @@ class PropertyController extends Controller
      */
     public function destroy(Property $property)
     {
+        \Illuminate\Support\Facades\Gate::authorize("delete", $property);
         $property->delete();
         return back()->with('ok','Usunięto.');
     }

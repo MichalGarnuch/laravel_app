@@ -1,0 +1,23 @@
+{
+  "repository": "laravel_app",
+  "branch": "wersja-inzynierska-2026",
+  "base_ref": "master",
+  "base_commit": "76f7ce0ce1daf4323193303f16346ab46b5ae606",
+  "date": "2026-10-29",
+  "checks": [
+    {
+      "command_or_scope": "PHPUnit --filter PropertyIsolationTest",
+      "result": "PASS: 1 test HTTP, 2 asercje; SQLite w pamięci"
+    },
+    {
+      "command_or_scope": "php -l zmienionych plików",
+      "result": "PASS"
+    },
+    {
+      "command_or_scope": "composer install + package:discover",
+      "result": "PASS w środowisku roboczym"
+    }
+  ],
+  "limitations": "Nie wykonano pełnej baterii Laravel ani testu przeglądarkowego Filament. Brak backfill produkcyjnych właścicieli, testów MySQL i izolacji wszystkich relacji domeny. Migracja może zmienić widoczność wcześniejszych rekordów do czasu poprawnego przypisania.",
+  "production_deployment_performed": false
+}

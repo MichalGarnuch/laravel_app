@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Property extends Model
 {
-    protected $fillable = ['name','address','area','price','description'];
+    protected $fillable = ['user_id','name','address','area','price','description'];
 
     /** @use HasFactory<\Database\Factories\PropertyFactory> */
     use HasFactory;
